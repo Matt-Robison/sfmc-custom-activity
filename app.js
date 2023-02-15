@@ -12,7 +12,7 @@ const app = express();
 // parse application/json
 app.use(bodyParser.json())
 
-app.set('port', (process.env.PORT || 443));
+app.set('port', (process.env.PORT || 8080));
 app.use('/', express.static(path.join(__dirname, 'home')));
 app.use('/assets', express.static(path.join(__dirname, '/node_modules/@salesforce-ux/design-system/assets')));
 
